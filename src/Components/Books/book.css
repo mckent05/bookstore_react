@@ -24,7 +24,8 @@
   row-gap: 25px;
 }
 
-.percent h3, p {
+.percent h3,
+p {
   font-size: 20px;
   text-transform: capitalize;
 }
