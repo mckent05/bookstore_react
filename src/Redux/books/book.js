@@ -1,16 +1,13 @@
-import { data } from '../../Components/data';
-/* eslint-disable no-case-declarations */
-
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
-const initialState = data;
+const initialState = [];
 
-const addBook = (newItem) => ({
+export const addBook = (newItem) => ({
   type: ADD_BOOK,
   payload: newItem,
 });
 
-const removeBook = (newItem) => ({
+export const removeBook = (newItem) => ({
   type: REMOVE_BOOK,
   payload: newItem,
 });
@@ -29,4 +26,4 @@ const booksReducer = (state = initialState, action) => {
   }
 };
 
-export { addBook, removeBook, booksReducer };
+export default booksReducer;

@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import { v4 as uuid } from 'uuid';
 import { addBook } from '../Redux/books/book';
 import { generateCompletion, generateChapter } from './data';
@@ -43,6 +43,10 @@ const Addbook = ({ category }) => {
       </form>
     </div>
   );
+};
+
+Addbook.propTypes = {
+  category: PropTypes.arrayOf(addBook).isRequired,
 };
 
 export default Addbook;
