@@ -7,12 +7,12 @@ import Bookcontrols from './Bookcontrols';
 import './book.css';
 
 const Book = ({
-  category, author, chapter, title, progress,
+  category, author, chapter, title, progress, removeItem,
 }) => (
   <article className="book-card d-flex a-center">
     <div className="book-details-control">
       <Bookdetails title={title} author={author} category={category} />
-      <Bookcontrols />
+      <Bookcontrols removeItem={removeItem} />
     </div>
     <div>
       <Bookprogress progress={progress} />
@@ -29,6 +29,7 @@ Book.propTypes = {
   chapter: PropTypes.number.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
+  removeItem: PropTypes.func.isRequired,
 
 };
 

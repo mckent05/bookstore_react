@@ -14,12 +14,32 @@
   justify-content: space-between;
 }
 
+.book-progress {
+  column-gap: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #e8e8e8;
+}
+
+.percent {
+  row-gap: 25px;
+}
+
+.percent h3,
+p {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
 .book-category {
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
   font-size: 0.875rem;
   color: #121212;
   text-transform: capitalize;
+}
+
+.book-details {
+  width: 30vw;
 }
 
 .book-title {
