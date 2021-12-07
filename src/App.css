@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  max-width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.a-center {
   align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.j-center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.f-col {
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.p-relative {
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  width: 99.9%;
+  height: 5.398rem;
+  padding: 50px 70px;
+  background-color: #fff;
+  column-gap: 1.125rem;
+  box-shadow: 0 1px 2px grey;
+}
+
+.nav-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.nav-links {
+  column-gap: 1.125rem;
+}
+
+.nav-link {
+  letter-spacing: 1.9px;
+  color: grey;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #121212;
+}
+
+.bookstore {
+  width: 100%;
+  background: #fafafa;
+}
+
+.profile-btn {
+  width: 3.183rem;
+  height: 3.183rem;
+  border: 1px solid #e8e8e8;
+  color: #0290ff;
+  border-radius: 50%;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+
+.user {
+  transform: scale(1.8);
 }
