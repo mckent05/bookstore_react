@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Bookdetails = ({ category, author, title }) => (
-  <section className="book-details">
+  <section className="book-details d-flex f-col">
     <h5 className="book-category">{category}</h5>
     <h2 className="book-title">{title}</h2>
     <h3 className="book-author">{author}</h3>
