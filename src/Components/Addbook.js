@@ -2,21 +2,20 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { v4 as uuid } from 'uuid';
-import { addBook } from '../Redux/books/book';
-import { generateCompletion, generateChapter } from './data';
+import { addNewBook } from '../Redux/books/book';
 
 const Addbook = ({ category }) => {
   const [title, setTitle] = useState('');
   const [cat, setCat] = useState('science');
-  const disptach = useDispatch();
+  const dispatch = useDispatch();
 
   const addNewBookToStore = (e) => {
     e.preventDefault();
     const newItem = {
-      title, category: cat, id: uuid(), progress: generateCompletion(), author: 'gbenga', chapter: generateChapter(),
+      title, category: cat, item_id: uuid(),
     };
     if (title !== '') {
-      disptach(addBook(newItem));
+      dispatch(addNewBook(newItem));
       setTitle('');
     } else {
       window.alert('Enter a Book Title');
@@ -46,7 +45,7 @@ const Addbook = ({ category }) => {
 };
 
 Addbook.propTypes = {
-  category: PropTypes.arrayOf(addBook).isRequired,
+  category: PropTypes.arrayOf(addNewBook).isRequired,
 };
 
 export default Addbook;

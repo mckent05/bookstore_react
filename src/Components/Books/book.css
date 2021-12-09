@@ -40,10 +40,15 @@ p {
 
 .book-details {
   width: 30vw;
+  row-gap: 2.5px;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .book-title {
   margin: 0.188rem 10.188rem 0 0;
+  width: 80%;
+  word-wrap: break-word;
   font-size: 1.375rem;
   font-weight: bold;
   letter-spacing: -0.2px;
