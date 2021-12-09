@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Category = () => (
-  <section className="category">
-    <p>Under Construction</p>
+  <section className="category d-flex a-center j-center">
+    <p>Under Construction...</p>
   </section>
 );
 
