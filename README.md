@@ -10,7 +10,7 @@
 
 
 # Live View
->  Project hasnt been deployed.
+>  Click on this [Link](https://mckent05.github.io/bookstore_react/) to view live
 
 # Getting Started
 
