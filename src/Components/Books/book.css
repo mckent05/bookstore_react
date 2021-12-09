@@ -12,6 +12,7 @@
   border: solid 1px #e8e8e8;
   background-color: #fff;
   justify-content: space-between;
+  box-shadow: 0 5px 6px #888;
 }
 
 .book-progress {
@@ -20,14 +21,28 @@
   border-right: 1px solid #e8e8e8;
 }
 
+.circle {
+  color: #379cf6;
+}
+
 .percent {
   row-gap: 25px;
 }
 
 .percent h3,
 p {
-  font-size: 20px;
+  font-size: 1.8rem;
   text-transform: capitalize;
+  color: #121212;
+  font-family: 
+    Cambria,
+    Cochin,
+    Georgia,
+    Times,
+    'Times New Roman',
+    serif;
+  font-weight: normal;
+
 }
 
 .book-category {
@@ -90,6 +105,7 @@ p {
   row-gap: 20px;
   justify-content: flex-start;
   width: 200px;
+  padding-left: 30px;
 }
 
 .book-chapter {
@@ -171,4 +187,9 @@ p {
   outline: none;
   border-radius: 4px;
   font-weight: 600;
+}
+
+.category {
+  background: #fafafa;
+  height: 82.4vh;
 }
