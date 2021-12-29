@@ -192,3 +192,89 @@ p {
   background: #fafafa;
   height: 82.4vh;
 }
+
+@media screen and (max-width: 950px) {
+  .f-row {
+    flex-direction: row;
+  }
+
+  .book-card {
+    width: 95vw;
+    flex-direction: column;
+    height: auto;
+    row-gap: 50px;
+    padding: 0;
+  }
+
+  .book-details {
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+  }
+
+  .book-category {
+    margin: 0;
+  }
+
+  .book-title {
+    margin: 0;
+    width: 50vw;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    font-family: cursive;
+  }
+
+  .book-author {
+    margin: 0;
+  }
+
+  .btn-cont {
+    margin: 0;
+    width: 80vw;
+    justify-content: space-around;
+    margin: 25px auto;
+  }
+
+  .control-btn {
+    width: 33%;
+    justify-content: center;
+  }
+
+  .book-progress {
+    border: none;
+  }
+
+  .percent h3,
+  p {
+    font-size: 24px;
+  }
+
+  .chapter-btn {
+    margin-bottom: 40px;
+  }
+
+  .add-book {
+    align-items: center;
+  }
+
+  .form {
+    flex-direction: column;
+    row-gap: 25px;
+    width: 95vw;
+    margin-bottom: 50px;
+  }
+
+  .form-input {
+    width: 60%;
+  }
+
+  .select {
+    width: 50%;
+  }
+
+  .submit-btn {
+    width: 40%;
+  }
+}
